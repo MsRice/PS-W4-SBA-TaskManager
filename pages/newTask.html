@@ -12,23 +12,26 @@
     <title>Task Manager App : New Task</title>
 </head>
 <body>
-    <nav>
-        <div>
-            <!-- img -->
-             <h1>RiceCodes , Task Manager</h1>
+    <nav id="navbar">
+        <div class="nav__main--wrapper">
+            <figure class="nav__image--wrapper">
+                <img class="nav__image" src="../images/Rice_no_background.png" alt="RiceCodes Logo">
+            </figure>
+            <h1>RiceCodes , Task Manager</h1>
         </div>
-        <div>
-            <!-- dummy Nav Bar -->
+        <div class="nav__links--wrapper">
+            <div class="nav__user--wrapper">
+                <img class="nav nav__image user__image" src="../images/IMG_20190712_114930.jpg" alt="">
+            </div>
+            <i class="fa-solid fa-bars nav__bars"></i>
         </div>
     </nav>
     <main>
         <div class="container">
             <div class="row">
-
-                <h1>New Task</h1>
-
                 <div class="new-task__section--wrapper">
-                    <div>
+                    <h1 class="new-task__header">New Task</h1>
+                    <div class="new-task__form--wrapper">
                         <form action="">
                             <label for="title">Title</label>
                             <input type="text" placeholder="Title">
@@ -54,7 +57,9 @@
                         </form>
                     </div>
                     
-                    <button>Submit</button>
+                    <a href="./index.html">
+                        <button>Submit</button>
+                    </a>
 
                 </div>
                 
@@ -62,7 +67,20 @@
         </div>
     </main>
     <footer>
-        <!-- dummy footer -->
+           <section id="footer">
+            <ul class="footer__links">
+                <li class="footer__link"><i class="fa-brands fa-facebook"></i></li>
+                <li class="footer__link"><i class="fa-brands fa-github"></i></li>
+                <li class="footer__link"><i class="fa-brands fa-linkedin"></i></li>
+                <li class="footer__link"><i class="fa-brands fa-youtube"></i></li>
+                <li class="footer__link"><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+
+            <p class="footer__link--copy">
+                &copy; Grain of Rice 🍚 2025 
+            </p>
+            
+        </section>
     </footer>
 </body>
 </html>
