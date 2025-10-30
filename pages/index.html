@@ -41,12 +41,13 @@
                         </div>
 
                         <div class="filter-task__section--wrapper">
-                                <select name="filter-task" id="filter-task">
-                                    <option value="Cateogory A-Z">Cateogory A-Z</option>
-                                    <option value="Cateogory Z-A">Cateogory Z-A</option>
-                                    <option value="">Due Date</option>
-                                    <option value="Cateogory Quanity">Cateogory Quanity(+)</option> 
-                                    <option value="Cateogory Quanity">Cateogory Quanity(-)</option> 
+                                <select name="filter-task" defaultValue="DEFAULT"  id="filter-task">
+                                    <option value="DEFAULT" disabled>Sort</option>
+                                    <option value="A_TO_Z">Cateogory A-Z</option>
+                                    <option value="Z_TO_A">Cateogory Z-A</option>
+                                    <option value="DATE_DUE">Due Date</option>
+                                    <option value="COMPLETE">Complete</option> 
+                                    <option value="NOT_COMPLETE">Incomplete</option> 
                                     <!-- how many options have the most quaity -->
                                 </select>
                             
@@ -54,9 +55,10 @@
 
                     </div>
 
-                    <div class="tasks__tasks-section--wrapper">                       
-
-                    </div>
+                    <form class="tasks__tasks-section--wrapper" id="tasks__tasks-section--wrapper">                       
+                    
+                    
+                    </form>
 
                 </div>
                 
